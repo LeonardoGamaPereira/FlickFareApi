@@ -44,7 +44,7 @@ servidor.delete('/filmes/:id', async (req, resp) => {
 
 servidor.put('/filmes/:id', async (req, resp) => {
     let id = req.params.id;
-    let clothes = req.body;
+    let filmes = req.body;
 
     try {
         let linesAffect = await alterFilmes(filmes, id);
